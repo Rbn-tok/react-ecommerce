@@ -1,4 +1,5 @@
 import React from 'react'
+import SideBar from './SideBar';
 
 
 const Index = (props) => {
@@ -11,8 +12,8 @@ const Index = (props) => {
   
   return (
     <>
-      <div>je suis {titre} index </div>
-      <button className='btn btn-outline-dark me-8'>ok</button>
+      
+     <SideBar/>
     </>
     
   )

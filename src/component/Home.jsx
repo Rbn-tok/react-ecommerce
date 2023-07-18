@@ -1,10 +1,13 @@
 import React from 'react'
 import mainBannerImage from '../asset/main_banner1-picsay-2.jpg';
-import Produits from './Produits';  
+import Produits from './compo/Produits';  
+import Navbar from './Navbar';
 const Home = ({title}) => {
 
   document.title=title;
   return (
+    <>
+    <Navbar/>
     <div className="hero">
         <div className="card bg-dark text-white border-0">
             <img src={mainBannerImage} className="card-img " alt="background" />
@@ -19,7 +22,7 @@ const Home = ({title}) => {
         </div>
         <Produits/>
     </div>
-    
+    </>
   )
 }
 

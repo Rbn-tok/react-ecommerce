@@ -6,16 +6,20 @@ import { addCart} from '../redux/action';
 import Skeleton from '@mui/material/Skeleton';
 import { useParams } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import Navbar from './Navbar';
+import Alert from './compo/Alert';
 
 const Produit = () => {
 
   const { id } = useParams();
   const [produit, setProduit] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
   const dispatch=useDispatch();
   const addProduit=(produit)=>{
       dispatch(addCart(produit));
+      setShowAlert(true);
   }
   //console.log("id de :"+id)
 
@@ -53,7 +57,7 @@ const Produit = () => {
   const ShowProduit = () => {
     return (
       <>
-        <div className="col-md-6 mb-5" key={produit.idProduit}>
+        <div className="col-md-6 mb-5" >
           <img
             src={"http://localhost:8087/uploads/" + produit.imageFilePath}
             className=""
@@ -65,7 +69,7 @@ const Produit = () => {
             <h4 className="text-uppercase text-black-50">{produit.categorie}</h4>
             <h1 className="display-5">{produit.nomProduit}</h1>
             <p className="lead fw-bolder">{produit.taille}<i className="fa fa-star"></i></p>
-            <h3 className="display-6 fw-bolde my-4">$ {produit.prixU}</h3>
+            <h3 className="display-6 fw-bolde my-4">{produit.prixU} Ar</h3>
             <p className="lead">
                 {produit.description}
                 <i className="fa fa-star"></i>
@@ -81,13 +85,24 @@ const Produit = () => {
   };
 
   return (
-    <div>
-      <div className="container py-5">
-        <div className="row py-4">   
-          {loading ? <Loading /> : <ShowProduit />}
+    <>
+      <Navbar/>
+     
+ <div>
+    
+        <div className="container py-5">
+          <div id="alert">
+          {showAlert && (
+              <Alert type="success" icon="check" message="Votre produit a été ajouté au panier avec succès !" duration="100" />
+            )}
+          </div>
+              
+          <div className="row py-4">   
+            {loading ? <Loading /> : <ShowProduit key={produit.idProduit}/>}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

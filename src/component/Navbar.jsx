@@ -1,5 +1,5 @@
 import React from 'react';
-import logo3 from '../asset/logo3.png';
+import logo3 from '../assets/logo3.png';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 

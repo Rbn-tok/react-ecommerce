@@ -4,6 +4,7 @@ import {useState,useEffect,useRef} from 'react'
 import { NavLink } from 'react-router-dom';
 import Skeleton from '@mui/material/Skeleton';
 import { useLocation } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const Produits = () => {
     const [data, setData] = useState([]);
@@ -157,6 +158,9 @@ const Produits = () => {
 
 
   return (
+    <>
+
+    <Navbar/>
     <div>
         <div className="container my-5 py-3">
             <div className="row">
@@ -171,6 +175,8 @@ const Produits = () => {
             </div>
         </div>
     </div>
+
+    </>
   )
 }
 

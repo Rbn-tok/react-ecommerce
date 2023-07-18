@@ -1,5 +1,4 @@
 import './App.css';
-import Navbar from './component/Navbar';
 import Home from './component/Home';
 import Produits from './component/Produits';
 
@@ -25,7 +24,7 @@ function App() {
     <>
     <Router>
       <Provider store={store} >
-       <Navbar/>
+       {/* <Navbar/> */}
         <Routes>{/* Switch in version >6*/}
           <Route path="/" element={<Home title="E-commerce | Homme"/>} />
           <Route path="/dashboard" element={<AdminIndex title="Dasboard"/>} />
