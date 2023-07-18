@@ -1,5 +1,5 @@
 import React from 'react'
-import mainBannerImage from '../asset/main_banner1-picsay-2.jpg';
+import mainBannerImage from '../assets/main_banner1-picsay-2.jpg';
 import Produits from './compo/Produits';  
 import Navbar from './Navbar';
 const Home = ({title}) => {
