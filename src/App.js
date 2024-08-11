@@ -9,7 +9,7 @@ import store from './redux/store';
 import Cart from './component/Cart';
 //import {useEffect} from 'react';
 import AdminIndex from './component/dahsboard/Index'
-//import { useLocation } from 'react-router-dom';
+import Commande from './component/dahsboard/Commande';
 
 function App() {
 
@@ -27,10 +27,11 @@ function App() {
        {/* <Navbar/> */}
         <Routes>{/* Switch in version >6*/}
           <Route path="/" element={<Home title="E-commerce | Homme"/>} />
-          <Route path="/dashboard" element={<AdminIndex title="Dasboard"/>} />
           <Route path="/produits" element={<Produits />} />
           <Route path="/produits/:id" element={<Produit />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/dashboard" element={<AdminIndex title="Dasboard"/>} />
+          <Route path="/dashboard/commande" element={<Commande title="Commande"/>} />
         </Routes>
         </Provider>
     </Router>

@@ -2,13 +2,14 @@ import React from 'react'
 import SideBar from './compo/SideBar';
 // import Header from './compo/Header';
 import Header from './compo/Header';
-import Ecommerce from './compo/section/Ecommerce';
+
 //importation du css dasboard
 
+import CommandeList from './compo/section/CommandeList';
 
 import Head from './compo/Head';
 
-function Index(props) {
+function Commande(props) {
 
   var titre = props.title;
 
@@ -23,7 +24,7 @@ function Index(props) {
       <SideBar />
       <main className="main-wrapper">
         <Header />
-        <Ecommerce />
+        <CommandeList/>
       </main>
 
     </>
@@ -31,4 +32,4 @@ function Index(props) {
   );
 }
 
-export default Index
+export default Commande
