@@ -53,7 +53,7 @@
   "devDependencies": {
     "source-map-loader": "^4.0.1"
   },
-  "homepage": "https://Rbn-tok.github.io/React-ecommerce/",
+  "homepage": "https://rbn-tok.github.io/react-ecommerce/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
