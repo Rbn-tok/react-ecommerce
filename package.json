@@ -1,6 +1,7 @@
 {
   "name": "react-ecommerce",
   "version": "0.1.0",
+  "homepage": "https://rbn-tok.github.io/react-ecommerce/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -53,8 +54,7 @@
   "devDependencies": {
     "source-map-loader": "^4.0.1"
   },
-  "homepage": "https://rbn-tok.github.io/react-ecommerce/",
-  "scripts": {
+   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
