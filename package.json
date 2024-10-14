@@ -1,7 +1,7 @@
 {
-  "name": "react-ecommerce",
+  "name": "React-ecommerce",
   "version": "0.1.0",
-  "homepage": "https://rbn-tok.github.io/react-ecommerce",
+  "homepage": "https://rbn-tok.github.io/React-ecommerce",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",
