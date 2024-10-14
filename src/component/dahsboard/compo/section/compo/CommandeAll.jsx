@@ -9,6 +9,8 @@ const CommandeAll = () => {
     const [filter, setFilter] = useState(allCommande);
     const [loading, setLoading] = useState(false);
     const componentMounted = useRef(true);
+
+    // eslint-disable-next-line
     const [dropdownStatus,setDropdownStatus]=useState('');
 
     const btnClikShowStatus=()=>{

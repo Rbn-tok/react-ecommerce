@@ -5,6 +5,8 @@ import axios from 'axios';
 const Ecommerce = () => {
   const [allCommandes, setCommande] = useState([]);
     const [filter, setFilter] = useState(allCommandes);
+
+    // eslint-disable-next-line
     const [loading, setLoading] = useState(false);
     const componentMounted = useRef(true);
 
@@ -14,7 +16,10 @@ const Ecommerce = () => {
     const totalCommande=allCommandes.length;
 
     const [totalPrice, setTotalPrice] = useState(0);
+    // eslint-disable-next-line
     const [produitLesPlusVendu,setProduitLesPlusVendu]=useState([])
+
+    // eslint-disable-next-line
     const [dropdownStatus,setDropdownStatus]=useState('');
 
     
