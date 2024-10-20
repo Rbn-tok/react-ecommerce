@@ -2,7 +2,7 @@ import './App.css';
 import Home from './component/Home';
 import Produits from './component/Produits';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Produit from './component/Produit';
 import { Provider } from 'react-redux';
 import store from './redux/store';
